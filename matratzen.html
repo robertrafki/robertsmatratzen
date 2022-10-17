@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Matratzen</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            color: white;
+            background-color: #535353;
+        }
+
+        #wrapper_matratzen {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 20px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+
+        .matratze {
+            border: #666 3px solid;
+            padding: 20px;
+        }
+
+        .matratze img {
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #uebersichtstabelle {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            margin-bottom: 100px;
+            border: 1px solid;
+        }
+
+        #uebersichtstabelle td {
+            padding: 10px;
+            border: 1px solid;
+        }
+
+        #uebersichtstabelle th {
+            padding: 10px;
+            border: 1px solid;
+        }
+
+        .matratze p::first-letter{
+            font-weight: bold;
+        }
+
+        .matratze h2{
+            font-style: italic;
+        }
+
+    </style>
+
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="matratzen.html">Matratzen</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+    <div id="wrapper_matratzen">
+        <div class="matratze">
+            <h2>Der Klassiker</h2>
+            <p>Der Klassiker ist das Standardmodell von Robert's Matratzen. Alt bewährt und doch ein Renner unter den
+                Matratzen.</p>
+            <img src="klassiker.jpg" alt="Der Klassiker">
+        </div>
+        <div class="matratze">
+            <h2>Der Naturelle</h2>
+            <p>Hat Nachhaltigkeit bei Ihnen den höchsten Stellenwert? Dann ist der Naturelle genau das richtige für Sie.
+                CO2 neutral und biologisch abbaubar.</p>
+            <img src="naturelle.jpg" alt="Der Naturelle">
+        </div>
+        <div class="matratze">
+            <h2>Die Luxusklasse</h2>
+            <p>Die Edele Matratze aus feinster Demeter-Seide mit Goldeinlage vom Goldesel. Für majestätischen Schlaf.
+            </p>
+            <img src="luxusklasse.jpg" alt="Der Luxusklasse">
+        </div>
+    </div>
+
+    <table id="uebersichtstabelle">
+        <tr>
+            <th>Modell</th>
+            <th>Abmessungen (cm)</th>
+            <th>Preis</th>
+        </tr>
+        <tr>
+            <td>Der Klassiker</td>
+            <td>200 x 150x 40</td>
+            <td>450.-</td>
+        </tr>
+        <tr>
+            <td>Der Naturelle</td>
+            <td>180x60x80</td>
+            <td>120.-</td>
+        </tr>
+        <tr>
+            <td>Die Luxusklasse</td>
+            <td>240x220x60</td>
+            <td>3400.-</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
